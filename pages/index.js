@@ -28,7 +28,7 @@ export default function Auth({username: user, secret: pass}) {
             .put(
                 "https://api.chatengine.io/users/",
                 {username, secret},
-                {headers: {"Private-key": "39884096-b39d-4844-a90e-9569d3ced74d"}}
+                {headers: {"Private-key": "8d70d8f8-5e54-4795-aebd-b103ad3e58e7"}}
             )
             .then(async r => {
                 document.cookie = `username=${r?.data?.username}`
